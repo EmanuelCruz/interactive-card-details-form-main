@@ -37,3 +37,9 @@
   src: url("/assets/fonts/Figtree-Regular.ttf") format("truetype");
   font-weight: 500;
 }
+
+@layer base {
+  html {
+    @apply font-main;
+  }
+}
