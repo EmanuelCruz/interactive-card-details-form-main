@@ -11,10 +11,11 @@ export default {
       },
       fontSize: {
         custom: "18px",
+        xxs: "10px",
       },
 
       fontFamily: {
-        main: "space-grotesk",
+        main: "Space Grotesk",
       },
     },
   },

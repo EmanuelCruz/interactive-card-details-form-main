@@ -1,51 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive card details form</title>
 
-  <title>Frontend Mentor | Interactive card details form</title>
+    <style>
+      #card1::after {
+        content: "000";
+        /* background-color: red; */
+      }
+    </style>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <div class="container m-auto w-full">
+      <header class="bg-black max-h-60 h-60 relative">
+        <img
+          src="./images/bg-card-back.png"
+          alt=""
+          class="max-w-72 w-72 h-fit absolute right-4 top-8"
+        />
+        <span
+          class="text-c-white right-14 top-24 mt-1 text-xxs absolute"
+          id="card1"
+        ></span>
+        <img
+          src="./images/bg-card-front.png"
+          alt=""
+          class="h-40 w-72 absolute left-4 top-2/4"
+        />
+        <div
+          class="h-40 absolute left-4 top-2/4 text-c-white px-5 py-4 w-72 flex flex-col gap-4"
+        >
+          <figure class="basis-2/4">
+            <img src="./images/card-logo.svg" alt="" class="w-14" />
+          </figure>
+          <p class="font-semibold text-lg tracking-widest basis-1/4">
+            0000 0000 0000 0000
+          </p>
+          <div class="flex justify-between text-xxs uppercase basis-1/4">
+            <p class="w-fit inline-block">Jane Appleseed</p>
+            <p class="w-fit inline-block">00/00</p>
+          </div>
+        </div>
+      </header>
+    </div>
 
-<body>
+    <form action="" class="flex flex-col mt-24 m-auto w-10/12 gap-1">
+      <label for="username">Cardholder Name</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="e.g. Jane Appleseed"
+        class="border-custom-grey appearance-none border rounded-lg py-3 px-4 text-charcoal-grey leading-tight focus:outline-none focus:ring-2 focus:ring-custom-grey mb-4"
+      />
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+      <label for="number-card">CCard Number</label>
+      <input
+        type="text"
+        name="number-card"
+        id="numberCard"
+        placeholder="e.g. 1234 5678 9123 0000"
+        class="border-custom-grey appearance-none border rounded-lg py-3 px-4 text-charcoal-grey leading-tight focus:outline-none focus:ring-2 focus:ring-custom-grey mb-4"
+      />
 
-  000
+      <div class="flex gap-4">
+        <div class="w-1/2">
+          <label for="exp-date mb-4">Exp. Date (MM/YY)</label>
+          <div class="flex gap-4">
+            <input
+              type="text"
+              name="exp-date"
+              id="numberCard"
+              placeholder="MM"
+              class="border-custom-grey appearance-none border rounded-lg py-3 px-4 text-charcoal-grey leading-tight focus:outline-none focus:ring-2 focus:ring-custom-grey my-2 inline-block w-1/2"
+            />
+            <input
+              type="text"
+              name="exp-date"
+              id="expDate"
+              placeholder="YY"
+              class="border-custom-grey appearance-none border rounded-lg py-3 px-4 text-charcoal-grey leading-tight focus:outline-none focus:ring-2 focus:ring-custom-grey my-2 inline-block w-1/2"
+            />
+          </div>
+        </div>
+        <div class="w-1/2">
+          <label for="cvc">CVC</label>
+          <input
+            type="text"
+            name="cvc"
+            id="cvc"
+            placeholder="e.g. 123"
+            class="border-custom-grey appearance-none border rounded-lg py-3 px-4 text-charcoal-grey leading-tight focus:outline-none focus:ring-2 focus:ring-custom-grey my-2 w-full"
+          />
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="bg-black rounded-lg py-4 px-5 text-white font-bold w-full mt-4 xl:mt-6 active-button"
+      >
+        Confirm
+      </button>
+    </form>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+    <!-- Completed state start -->
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+    <!-- Thank you! We've added your card details Continue
 
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>
